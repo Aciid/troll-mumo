@@ -1,7 +1,10 @@
-import feedparser, random, urllib,base64
+import feedparser, random, urllib, base64
 from BeautifulSoup import BeautifulSoup
+from random import choice
 
-d = feedparser.parse('http://imgur.com/r/all/rss')
+
+l = ['wtf','nsfw','spacedicks','clopclop','techsupportgore']
+d = feedparser.parse('http://imgur.com/r/'+choice(l)+'/rss')
 rand = random.randint(1,10)
 crap = d.entries[rand].description
 
