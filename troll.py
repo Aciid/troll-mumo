@@ -27,7 +27,8 @@ def munchies():
         encoded = base64.b64encode(img.read())
 
 def soloMidOrFeed():
-        s1.sendMessageChannel(2,1,'<img src="data:image/jpeg;charset=utf-8;base64,' + str(encoded) + $
+        s1.sendMessageChannel(2,1,'<img src="data:image/jpeg;charset=utf-8;base64,' + str(encoded) + '"/><a href=' + link +'>'+link+'</a>')
+
 
 if __name__ == '__main__':
         getPile()
